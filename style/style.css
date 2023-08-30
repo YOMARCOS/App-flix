@@ -1,0 +1,30 @@
+body{
+  background: #000;
+}
+.font-header{
+    font-family: 'verdana';
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+.font-secundary{
+    font-family: 'verdana';
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+#header-row{
+    background-image: url(../assets/BB_S2_KA_HORIZ_NOTEXT-small.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+.bg-btn-red{
+    background-color: red;
+}
+ul>li{
+    text-decoration: none;
+}
+.bg-btn-red:hover{
+background: #4771fb;
+}
+.font-footer{
+    color: rgb(144, 144, 144);
+}

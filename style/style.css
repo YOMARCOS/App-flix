@@ -18,6 +18,7 @@ body{
 }
 .bg-btn-red{
     background-color: red;
+    border-radius: 10px;
 }
 ul>li{
     text-decoration: none;

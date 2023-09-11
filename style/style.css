@@ -1,5 +1,11 @@
+.font-logo{
+    font-family: 'Fjalla One', sans-serif;
+}
 body{
   background: #000;
+  width: 100%;
+  height: 100vh;
+
 }
 .font-header{
     font-family: 'verdana';
@@ -12,12 +18,14 @@ body{
     font-size: 2.5rem;
 }
 #header-row{
-    background-image: url(../assets/BB_S2_KA_HORIZ_NOTEXT-small.jpg);
+  
+    background:   url(../assets/BB_S2_KA_HORIZ_NOTEXT-small.jpg) fixed ;
     background-size: cover;
     height: 100vh;
 }
 .bg-btn-red{
     background-color: red;
+    border-radius: 1px;
     border-radius: 10px;
 }
 ul>li{
@@ -28,4 +36,90 @@ background: #4771fb;
 }
 .font-footer{
     color: rgb(144, 144, 144);
+}
+.btn-red{ 
+    border-radius: 10px;
+    font-weight: 1;
+}
+.btn-red:hover{
+    font-weight: 700;
+    background: red;
+}
+.font-footer:hover{
+    color: white;
+}
+
+.card-image{
+    max-height: 160px;  
+}
+.card-surprise{
+    display: none;
+    opacity: 0; /* Define a opacidade para 0 quando está oculto */
+    transition: opacity 0.3s ease; /* Adiciona uma transição suave de 0.3 segundos */
+}
+.card:hover  .card-surprise{
+     display: block;
+     opacity: 0.9;
+   border-bottom: 10px;
+}
+.card{
+    border:none
+}
+
+.card:hover {
+    transition: 0.5s;
+    border-radius: 5px;
+    border: 2px solid rgb(0, 204, 255); /* Ajusta a borda ao passar o mouse */
+    box-shadow: 0 0 20px rgba(173, 233, 255, 0.373); /* Ajusta a sombra ao passar o mouse */
+}
+
+#section-series:hover hr{
+
+    border: 1px solid rgba(0, 234, 255, 0.382); /* Ajusta a borda ao passar o mouse */
+ 
+}
+#section-filmes:hover hr{
+
+    border: 1px solid rgba(0, 234, 255, 0.382); /* Ajusta a borda ao passar o mouse */
+ 
+}
+#section-animes:hover hr{
+
+    border: 1px solid rgba(0, 234, 255, 0.382); /* Ajusta a borda ao passar o mouse */
+ 
+}
+#logo {
+    animation: colorChange 3s infinite alternate;
+}
+
+.logo-text {
+    animation: colorChange 2s infinite alternate;
+}
+
+@keyframes colorChange {
+    0% {
+        color: rgb(255, 255, 255); /* Cor inicial */
+        text-shadow: 0 0 5px #a3a3a3;
+    }
+    30% {
+        color: rgb(85, 255, 0); /* Cor a meio caminho da animação */
+        text-shadow: 0 0 5px #a2a2a2;
+    }
+    60% {
+        color: rgb(255, 0, 225); /* Cor final */
+        text-shadow: 0 0 5px #c2c2c2;
+    }
+    100% {
+        color: rgb(255, 234, 0); /* Cor final */
+        text-shadow: 0 0 5px #a6a6a6;
+    }
+}
+
+.title-shadow {
+    text-shadow: 0 0 8px #2400b4;
+}
+
+.modal-size{
+    width: 90%;
+    
 }
